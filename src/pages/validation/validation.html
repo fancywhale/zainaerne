@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      手机绑定
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>在进行下一步操作之前，请先绑定手机。</h4>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>手机号</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-buttons>
+          <button ion-button>发送</button>
+        </ion-buttons>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>密码</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>验证</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    
+    <ion-buttons>
+      <button ion-button block (click)="register()">下一步</button>
+    </ion-buttons>
+    <p text-center><a>已有账号登录</a></p>
+  </form>
+</ion-content>

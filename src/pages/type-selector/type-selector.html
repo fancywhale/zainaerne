@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      失物寻主
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="selectedPage">
+    <ion-segment-button value="disease">
+      证件
+    </ion-segment-button>
+    <ion-segment-button value="maitain">
+      物品
+    </ion-segment-button>
+  </ion-segment>
+  <div class="item-holder">
+    <ion-card (tap)="tapEvent($event)">
+      <ion-item>
+        身份证
+      </ion-item>
+    </ion-card>
+    <ion-card (tap)="tapEvent($event)">
+      <ion-item>
+        身份证
+      </ion-item>
+    </ion-card>
+    <ion-card (tap)="tapEvent($event)">
+      <ion-item>
+        身份证
+      </ion-item>
+    </ion-card>
+    <ion-card (tap)="tapEvent($event)">
+      <ion-item>
+        身份证
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

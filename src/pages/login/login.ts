@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { IndexPage } from '../index';
+import { MainPage } from '../main/main';
 
 @Component({
   selector: 'page-login',
@@ -13,6 +14,6 @@ export class LoginPage {
   }
 
   public login() {
-    this.navCtrl.push(IndexPage);
+    this.navCtrl.setRoot(MainPage);
   }
 }

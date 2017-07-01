@@ -5,14 +5,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { UserPage } from '../pages/user/user';
-import { CardPage } from '../pages/card/card';
+import { HomePage } from '../pages/main/home/home';
+import { UserPage } from '../pages/main/user/user';
+import { CardPage } from '../pages/main/card/card';
 import { IndexPage } from '../pages/index';
 import { GuidePage } from '../pages/guide/guide';
 import { Guide2Page } from '../pages/guide/guide2';
 import { GuideRootPage } from '../pages/guide/index';
 import { LoginPage } from '../pages/login/login';
+import { TypeSelectorPage } from '../pages/type-selector/type-selector';
+import { ValidationPage } from '../pages/validation/validation';
+import { MainPage } from '../pages/main/main';
+import { MainService } from '../pages/main/main.service';
+import { ItemSearchPage } from '../pages/main/item-search/item-search';
 
 const APP_PAGES = [
   MyApp,
@@ -24,6 +29,10 @@ const APP_PAGES = [
   Guide2Page,
   GuideRootPage,
   LoginPage,
+  TypeSelectorPage,
+  ValidationPage,
+  MainPage,
+  ItemSearchPage,
 ];
 
 const APP_CONFIG = {
@@ -47,7 +56,8 @@ const APP_CONFIG = {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    MainService,
   ]
 })
 export class AppModule {}

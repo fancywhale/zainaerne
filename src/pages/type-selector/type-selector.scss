@@ -1,0 +1,14 @@
+type-selector-page {
+  .item-holder {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ion-card {
+      width: calc(50% - 6px);
+      height: 80px;
+      margin: 0px 0px 12px 0px;
+    }
+  }
+}

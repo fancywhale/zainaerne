@@ -1,10 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
-import {
-  ViewController,
-  Events,
-} from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 import { GuidePage } from './guide';
+import { LoginPage } from '../login/login';
 
 export const SKIP_EVENT = 'guide.skip';
 
@@ -35,7 +33,7 @@ export class GuideRootPage implements OnDestroy {
 
 
   constructor(
-    private viewCtrl: ViewController,
+    private _navCtrl: NavController,
   ) {
   }
 
@@ -43,6 +41,6 @@ export class GuideRootPage implements OnDestroy {
   }
 
   public dismiss() {
-    this.viewCtrl.dismiss();
+    this._navCtrl.setRoot(LoginPage);
   }
 }
