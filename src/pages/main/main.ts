@@ -17,7 +17,7 @@ import { MapPage } from './map/map';
     <ion-tabs #content>
       <ion-tab tabTitle="首页" tabIcon="heart" [root]="homePage"></ion-tab>
       <ion-tab tabTitle="地图" tabIcon="map" [root]="mapPage"></ion-tab>
-      <ion-tab tabTitle="宠物" tabIcon="octocat" [root]="cardPage"></ion-tab>
+      <ion-tab tabTitle="宠物" tabIcon="outlet" [root]="cardPage"></ion-tab>
       <ion-tab tabTitle="我" tabIcon="person" [root]="userPage"></ion-tab>
     </ion-tabs>
   `,
