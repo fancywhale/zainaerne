@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      赏金地图
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <baidu-map 
+    ak="zgxxc54yRqlHYbh41UQSen3caLggkHys" 
+    [options]="opts" 
+    [offline]="offlineOpts" 
+    (onMapLoaded)="loadMap($event)" 
+    (onMarkerClicked)="clickMarker($event)" 
+    (onClicked)="clickmap($event)" 
+  ></baidu-map>
+</ion-content>
+

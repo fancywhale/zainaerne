@@ -8,6 +8,8 @@ import { ValidationPage } from '../validation/validation';
   templateUrl: './type-selector.html',
 })
 export class TypeSelectorPage {
+  public selectedPage: string = 'identifications';
+
   constructor(
     private _navCtrl: NavController,
   ) { }

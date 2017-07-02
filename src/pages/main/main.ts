@@ -5,7 +5,7 @@ import { UserPage } from './user/user';
 import { CardPage } from './card/card';
 import { HomePage } from './home/home';
 import { MainService } from './main.service';
-import { TypeSelectorPage } from '../type-selector/type-selector';
+import { MapPage } from './map/map';
 
 @Component({
   template: `
@@ -16,8 +16,8 @@ import { TypeSelectorPage } from '../type-selector/type-selector';
     </ion-menu>
     <ion-tabs #content>
       <ion-tab tabTitle="首页" tabIcon="heart" [root]="homePage"></ion-tab>
-      <ion-tab tabTitle="地图" tabIcon="map" [root]="homePage"></ion-tab>
-      <ion-tab tabTitle="购卡" tabIcon="star" [root]="cardPage"></ion-tab>
+      <ion-tab tabTitle="地图" tabIcon="map" [root]="mapPage"></ion-tab>
+      <ion-tab tabTitle="宠物" tabIcon="octocat" [root]="cardPage"></ion-tab>
       <ion-tab tabTitle="我" tabIcon="person" [root]="userPage"></ion-tab>
     </ion-tabs>
   `,
@@ -27,6 +27,7 @@ export class MainPage {
   public homePage = HomePage;
   public userPage = UserPage;
   public cardPage = CardPage;
+  public mapPage = MapPage;
 
   constructor(
     private _mainService: MainService,  

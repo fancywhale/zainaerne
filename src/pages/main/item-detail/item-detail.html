@@ -1,0 +1,88 @@
+<ion-content>
+  <div fxLayout="column" class="content-wrap">
+    <div fxFlex="grow" class="content-holder">
+      <cs-back-button></cs-back-button>
+      <ion-slides pager>
+
+        <ion-slide>
+          <img class="" src="http://www.lostandfound.cn/attachment/201706/8/1496920011_39r90h_cb.jpg"/>
+        </ion-slide>
+
+        <ion-slide>
+          <img class="" src="http://www.lostandfound.cn/attachment/201706/8/1496920011_39r90h_cb.jpg"/>
+        </ion-slide>
+
+        <ion-slide>
+          <img class="" src="http://www.lostandfound.cn/attachment/201706/8/1496920011_39r90h_cb.jpg"/>
+        </ion-slide>
+
+      </ion-slides>
+      <div padding>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <h6 ion-text>护照</h6>
+            </ion-col>
+            <ion-col col-6>
+              <sub pull-right class="sub" ion-text  color="sub">证件/护照</sub>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              <span ion-text color="sub">上海长宁区</span>
+              <ion-icon class="text-icon" name="pin" color="secondary"></ion-icon>
+            </ion-col>
+            <ion-col col-6>
+              <span ion-text color="sub" pull-right>2017年6月28日</span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              <span ion-text color="sub">期望奖金</span>
+              <ion-icon name="usd" class="text-icon" color="secondary"></ion-icon>
+            </ion-col>
+            <ion-col col-6>
+              <ion-item class="avatar" no-lines>
+                <ion-avatar item-start>
+                  <img src="http://www.lostandfound.cn/attachment/201706/8/1496920011_39r90h_cb.jpg">
+                </ion-avatar>
+                乔志林
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      
+      <form>
+        <ion-list>
+          <ion-item-divider>护照</ion-item-divider>
+          <ion-item>
+            <ion-label fixed>姓名</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+
+          <ion-item no-lines>
+            <ion-label fixed>证件号码</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item-divider>丢失信息</ion-item-divider>
+          <ion-item>
+            <ion-label fixed>丢失日期</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label fixed>丢失地点</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-list>
+      </form>
+    </div>
+    <div fxFlex="46px" class="menu-holder" fxLayout>
+      <ion-buttons fxLayout fxFlexFill>
+        <button ion-button fxFlex="92px" clear>联系好人</button>
+        <button ion-button fxFlex="grow" clear>立刻认领</button>
+      </ion-buttons>
+    </div>
+  </div>
+</ion-content>

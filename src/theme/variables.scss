@@ -2,8 +2,11 @@
 // http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
 
+
+
 @import "ionic.globals";
 @import "palette";
+@import "global";
 
 
 // Shared Variables
@@ -28,6 +31,7 @@ $colors: (
   primary:    color($app-primary, 500),
   secondary:  color($app-accent, 200),
   danger:     color($app-warn, 500),
+  sub: #aaa,
   light:      #f4f4f4,
   dark:       #222
 );

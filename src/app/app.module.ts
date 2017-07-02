@@ -18,6 +18,10 @@ import { ValidationPage } from '../pages/validation/validation';
 import { MainPage } from '../pages/main/main';
 import { MainService } from '../pages/main/main.service';
 import { ItemSearchPage } from '../pages/main/item-search/item-search';
+import { SearchResultPage } from '../pages/main/search-result/search-result';
+import { ItemDetailPage } from '../pages/main/item-detail/item-detail';
+import { SharedModule } from '../shared/shared.module';
+import { MapPage } from '../pages/main/map/map';
 
 const APP_PAGES = [
   MyApp,
@@ -33,6 +37,9 @@ const APP_PAGES = [
   ValidationPage,
   MainPage,
   ItemSearchPage,
+  SearchResultPage,
+  ItemDetailPage,
+  MapPage,
 ];
 
 const APP_CONFIG = {
@@ -49,7 +56,8 @@ const APP_CONFIG = {
   declarations: APP_PAGES,
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, APP_CONFIG)
+    IonicModule.forRoot(MyApp, APP_CONFIG),
+    SharedModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: APP_PAGES,

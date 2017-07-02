@@ -1,37 +1,34 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      数据
+      查询信息
     </ion-title>
     <ion-buttons end>
-      <button ion-button clear end>
+      <button ion-button clear end (click)="search()">
         提交
       </button>
     </ion-buttons>
     
   </ion-navbar>
 </ion-header>
-<ion-content padding>
+<ion-content>
   <form>
     <ion-list>
-      <ion-list-header>
+      <ion-item-divider>
         护照
-      </ion-list-header>
+      </ion-item-divider>
       <ion-item>
         <ion-label fixed>姓名</ion-label>
         <ion-input type="text" value=""></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>证件号码</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-    </ion-list>
-
-    <ion-list>
-      <ion-list-header>
+      <ion-item-divider>
         丢失信息
-      </ion-list-header>
+      </ion-item-divider>
       <ion-item>
         <ion-label fixed>丢失日期</ion-label>
         <ion-input type="text" value=""></ion-input>

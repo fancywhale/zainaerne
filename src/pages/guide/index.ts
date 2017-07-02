@@ -22,8 +22,22 @@ export const SKIP_EVENT = 'guide.skip';
       </ion-navbar>
     </ion-header>
 
-    <ion-content padding>
-      <ion-nav [root]="rootPage"></ion-nav>
+    <ion-content>
+      <ion-slides pager [parallax]="true">
+
+        <ion-slide>
+          <h2>Slide 1</h2>
+        </ion-slide>
+
+        <ion-slide>
+          <h2>Slide 2</h2>
+        </ion-slide>
+
+        <ion-slide>
+          <h2>Slide 3</h2>
+        </ion-slide>
+
+      </ion-slides>
     </ion-content>
   `
 })
